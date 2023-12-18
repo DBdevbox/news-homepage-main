@@ -1,0 +1,453 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter Regular', Arial, sans-serif;
+    background-color: hsl(36, 100%, 99%);
+    padding: 0px 50px;
+}
+
+h1 {
+    font-family: 'Inter Bold', Arial, sans-serif;
+    font-weight: 800;
+}
+
+h2,
+h3 {
+    font-family: 'Inter ExtraBold', Arial, sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Inter Regular', Arial, sans-serif;
+    font-weight: 400;
+}
+
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.logo img {
+    height: 30px;
+}
+
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    margin: 2px 5px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    padding: 5px 7px;
+    color: hsl(236, 13%, 42%);
+}
+
+.nav-list li a:hover {
+    color: hsl(5, 85%, 63%);
+    ;
+}
+
+/*main article*/
+
+
+.main-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    margin-bottom: 50px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article {
+    height: 100%;
+    width: 65%;
+    padding-right: 20px;
+}
+
+.article-img {
+    height: 220px;
+
+}
+
+.mobile {
+    display: none;
+}
+
+.article-img img {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.article-content {
+    height: 180px;
+    display: flex;
+    padding-top: 25px;
+
+}
+
+.heading {
+    width: 57.5%;
+
+}
+
+.heading h1 {
+    font-size: 45px;
+    padding-right: 50px;
+    color: hsl(240, 100%, 5%);
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -.5px;
+}
+
+.content {
+    width: 55%;
+    position: relative;
+
+}
+
+.content p {
+    font-size: 16px;
+    color: hsl(236, 13%, 42%);
+    line-height: 1.5em;
+
+}
+
+.btn {
+    padding: 15px 30px;
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    background: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    position: absolute;
+    bottom: 0px;
+
+}
+
+.btn:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.new-article {
+    height: 100%;
+    width: 35%;
+    background-color: #000;
+    color: #fff;
+    padding: 25px 20px;
+    
+}
+
+.top-heading {
+    margin: 10px 0px 15px 0px;
+}
+
+.top-heading h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 28px;
+}
+
+.new-blog {
+    border-bottom: .5px solid gray;
+    padding: 15px 0px;
+    padding-bottom: 20px;
+}
+
+.new-blog h3 {
+    margin-bottom: 5px;
+    color: hsl(36, 100%, 99%);
+}
+
+.new-blog h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.new-blog p {
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+    line-height: 1.3;
+
+
+}
+
+.new-blog:last-child {
+    border-bottom: none;
+}
+
+
+
+
+/* recc article*/
+
+.rec-article {
+    margin-top: 0px;
+    height: 150px;
+    display: flex;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.blog {
+    width: 32.5%;
+    display: flex;
+    
+}
+
+.blog-img img {
+    height: 100%;
+    max-width: 118px; 
+      
+}
+
+.blog-content {
+    height: 100%;
+    margin-left: 10px;
+
+
+}
+
+.blog-content h2 {
+    padding-top: 5px;
+    color: hsl(233, 8%, 79%);
+}
+
+.blog-content h3:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.blog-content p {
+    color: hsl(236, 13%, 42%);
+}
+
+.blog-content h3 {
+    font-size: 16px;
+    padding: 10px 0px;
+    color: hsl(240, 100%, 5%);
+
+
+
+}
+
+.toggel-bar {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+/* @media*/
+
+@media only screen and (max-width:1000px) {
+
+    body {
+        padding: 15px 25px;
+        background-color: hsl(36, 100%, 99%);
+
+    }
+
+
+
+    .toggel-bar {
+        display: flex;
+        z-index: 1000;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .hide {
+        display: none;
+
+    }
+
+    .nav-list {
+        flex-direction: column;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        width: 70%;
+        height: 1000px;
+        z-index: 1000;
+        padding-top: 150px;
+        display: none;
+
+    }
+
+    .nav-list li {
+        margin: 15px 10px;
+    }
+
+    .nav-list li a {
+        font-size: 22px;
+
+    }
+
+    /* main content start from here  */
+    .main-article {
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+
+    .article {
+        height: 100%;
+        width: 100%;
+        padding-right: 0px;
+
+    }
+
+    .main-article {
+        height: auto;
+    }
+
+    .new-article {
+        height: 100%;
+        width: 100%;
+        padding: 25px 20px;
+        margin: 50px 0px;
+    }
+
+
+
+    .rec-article {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .blog {
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .blog-content {
+        margin-left: 20px;
+
+    }
+
+    .article-content {
+        height: auto;
+        padding-top: 25px;
+        flex-direction: column;
+
+    }
+    .article-content p{
+        padding-top: 15px;
+    }
+
+    .heading {
+        width: 80%;
+
+    }
+
+    .content {
+        width: 80%;
+        height: auto;
+    }
+
+    .btn {
+        position: relative;
+        margin-top: 40px;
+    }
+
+
+
+
+    .blog-content h2 {
+        font-size: 35px;
+    }
+
+
+    .blog-content p {
+        color: hsl(236, 13%, 42%);
+        line-height: 1.5;
+    }
+
+    .blog-content h3 {
+        font-size: 18px;
+
+    }
+    .attribution{
+        margin: auto;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+}
+
+@media only screen and (min-width:1001px) and (max-width:1080px) {
+    .heading h1{
+        font-size: 41px;
+    }
+    .article-content p{
+        font-size: 15px;
+        margin-bottom:5px ;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .blog-content p {
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width:375px) {
+
+    body {
+        padding: 10px 15px;
+
+    }
+
+    .mobile {
+        display: flex;
+        
+    }
+
+    .desktop {
+        display: none;
+    }
+    .attribution{
+        margin: auto;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+
+}
+
+.attribution{
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+}
