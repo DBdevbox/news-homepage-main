@@ -135,7 +135,7 @@ p {
     color: hsl(36, 100%, 99%);
     position: absolute;
     bottom: 0px;
-    
+    text-transform: uppercase;
 }
 
 .btn:hover {
