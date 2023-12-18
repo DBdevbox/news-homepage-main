@@ -272,6 +272,7 @@ p {
     .toggel-bar {
         display: flex;
         z-index: 1000;
+        
     }
 
     .close {
@@ -287,6 +288,7 @@ p {
 
     }
 
+   
     .nav-list {
         flex-direction: column;
         height: auto;
@@ -310,6 +312,7 @@ p {
         font-size: 22px;
 
     }
+    
 
     /* main content start from here  */
     .main-article {
