@@ -395,6 +395,12 @@ p {
         font-size: 18px;
 
     }
+    .blog-img img {
+        max-height: 150px;
+        max-width: 150px;
+         
+        
+    }
     .attribution{
         margin: auto;
         text-align: center;
@@ -438,7 +444,7 @@ p {
     .blog-img img {
         max-height: 150px;
         max-width: 150px;
-        flex-direction: column; 
+         
         
     }
     .attribution{
