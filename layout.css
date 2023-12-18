@@ -436,7 +436,7 @@ p {
     }
 
     .blog-img img {
-        height: auto;
+        max-height: 100%;
         max-width: 118px; 
         
     }
